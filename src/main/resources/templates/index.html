@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+    <a th:href="@{/postForm}">投稿ページへ</a>
     <ul th:each="post : ${postList}">
         <li th:text="${post.getMemo()}"></li>
     </ul>
